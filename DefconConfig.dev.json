@@ -1,0 +1,34 @@
+{
+  "name": "DEF CON Media",
+  "platformUrl": "https://media.defcon.org",
+  "description": "The DEF CON media server: recorded talks from every DEF CON conference with video, one channel per conference, with search and captions where available.",
+  "author": "mephisto",
+  "authorUrl": "https://github.com/pfmephisto",
+  "sourceUrl": "http://localhost:8000/DefconConfig.dev.json",
+  "scriptUrl": "./DefconScript.js",
+  "repositoryUrl": "https://github.com/pfmephisto/grayjay-source-defcon",
+  "version": 1,
+  "iconUrl": "./DefconIcon.png",
+  "id": "f4b1cc3d-0133-4bb3-a28e-634d5b0fde8e",
+  "scriptSignature": "",
+  "scriptPublicKey": "",
+  "maxDownloadParallelism": 1,
+  "subscriptionRateLimit": 5,
+  "changelog": {
+    "1": [
+      "Initial release for media.defcon.org",
+      "One channel per conference, talks listed from each conference's video folder",
+      "Home feed (newest conference first) and search, across all conferences or within one",
+      "Playback on Grayjay Desktop through a generated DASH stream built from the original MP4 (works around the server's cross-origin policy)",
+      "Subtitles fetched by the plugin and converted to WebVTT",
+      "Real durations and a transcript excerpt from the server's auto-generated captions"
+    ]
+  },
+  "packages": [
+    "Http"
+  ],
+  "allowUrls": [
+    "media.defcon.org"
+  ],
+  "settings": []
+}

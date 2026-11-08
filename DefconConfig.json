@@ -1,0 +1,34 @@
+{
+  "name": "DEF CON Media",
+  "platformUrl": "https://media.defcon.org",
+  "description": "The DEF CON media server: recorded talks from every DEF CON conference with video, one channel per conference, with search and captions where available.",
+  "author": "mephisto",
+  "authorUrl": "https://github.com/pfmephisto",
+  "sourceUrl": "https://raw.githubusercontent.com/pfmephisto/grayjay-source-defcon/main/DefconConfig.json",
+  "scriptUrl": "./DefconScript.js",
+  "repositoryUrl": "https://github.com/pfmephisto/grayjay-source-defcon",
+  "version": 1,
+  "iconUrl": "./DefconIcon.png",
+  "id": "f4b1cc3d-0133-4bb3-a28e-634d5b0fde8e",
+  "scriptSignature": "mdudrufMUDPHeCn+kxCisBNnBnKqsH9MSPKqk0VHT0WcEGACnEmasx/w7+zUARRd1U+ZNEgroA6wu+1d88H8GYRyp7shuXipKiPHEMfV3xJ+TyMT8MSkRPGjDfT+LqjeMGu8Cqy05vrSO0shD2jam1eIzRsQWwZu2zS1r/bswM16qiwbyeOLHyWat9G9TjD8U5j2e7uci1tehu4BmfztxAvXG4CmSSbqBHv5QJBi6ykyu4sbrHqVo2OiVqopcvW0vySs4l8q4eHfnXeZ89z4GX7CfCR74ixvFO5E7GPEC30Zgqa+cCR+eD2/V1k5ufZ+o3IOJPTRxrRHsr9+qADFIw==",
+  "scriptPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4GqDns577GKsuIr+z6+5gLyKOf7Q2kqJJPt0bgDHWkhuwJaM19UpJj/2kqmaaFDablubHU46cTcQMzibxjgyWfWENgXDKch3Ws5Z+5QltIGsg20cssjSL299Lmwgm4GaTErKQOuN6b1GOpBn9IV3je7eBvCbcmICU4ppOeTCzmDB6OOB5OOIRYufZ/WI8w2P7IFxpQQm81+LqeJjo9V/ngpAIXrKsTo0hpj9RUYnGKg745pzzpbQ1gkqnTunfUNFrU2PbLIouDzAx+IdQRiJzD1OxzAwOFLSWshrCznhMuL9m9w7YxdYjuJidF2eV5FShW8C8FFUTUwTX2d2KJMkWQIDAQAB",
+  "maxDownloadParallelism": 1,
+  "subscriptionRateLimit": 5,
+  "changelog": {
+    "1": [
+      "Initial release for media.defcon.org",
+      "One channel per conference, talks listed from each conference's video folder",
+      "Home feed (newest conference first) and search, across all conferences or within one",
+      "Playback on Grayjay Desktop through a generated DASH stream built from the original MP4 (works around the server's cross-origin policy)",
+      "Subtitles fetched by the plugin and converted to WebVTT",
+      "Real durations and a transcript excerpt from the server's auto-generated captions"
+    ]
+  },
+  "packages": [
+    "Http"
+  ],
+  "allowUrls": [
+    "media.defcon.org"
+  ],
+  "settings": []
+}
